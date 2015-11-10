@@ -5,18 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Barnyard Boogie </title>
+    <style type="text/css" media="all">
+      p {
+        color: red;
+        }
+      .statement p
+        {
+        color: brown
+        }
+      .statement .mystery {
+        color: orange;
+        font-style: italic;
+        }  
+      .statement #iron{
+        color: olive;
+        font-weight: 900;
+        font-style: normal;
+        }
+      .statement .dramatic {
+        color: black;
+        font-style: oblique;
+        }
+    </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   </head>
   <body>
     <header> 
-      <h1> WEBSITE OF THE FUTURE, TODAY! </h1> 
+      <h1> WEBSITE OF THE FUTURE, <strong> TODAY! </strong></h1> 
     </header>
     <nav>
-    <ul>
-      <li><a>href="#">Lovely Shoes</a></li>
-      <li><a>href="#">Milk Store</a></li>
-      <li><a>href="#">Genuine Friendship!</a></li>
-      <li><a>href="#">Charming Grandmother</a></li>
+      <ul>
+        <li><a>href="#">Lovely Shoes</a></li>
+        <li><a>href="#">Milk Store</a></li>
+        <li><a>href="#">Genuine Friendship!</a></li>
+        <li><a>href="#">Charming Grandmother</a></li>
       </ul>
     </nav>
     <main>
@@ -26,12 +48,14 @@
             Beans, protein source!
           </h2>
         </header>
-           <p> 
+        <div class="statement">
+          <p class="mystery" id="iron"> 
             But lacking in iron, maybe.
-           </p>
-           <p>
-             I guess it's too soon to tell.
           </p>
+          <p class="mystery">
+            I guess it's too soon to tell.
+          </p>
+        </div>
       </article>
       <article>
         <header>
@@ -39,12 +63,14 @@
             Is wine <em> really </em> heart healthy?
           </h2>
         </header>
+        <div class="statement">
         <p>
           We may never know.
         </p>
-        <p>
+        <p class="dramatic">
           But there are bigger mysteries out there.
         </p>
+        </div>
       </article>
     </main>
     <footer>
